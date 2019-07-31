@@ -1,0 +1,10 @@
+﻿  Source.cpp
+C:\Users\adams\source\repos\OOP345-EXAM\ExamReview\Source.cpp(114,15): error C2374:  'fout': redefinition; multiple initialization
+C:\Users\adams\source\repos\OOP345-EXAM\ExamReview\Source.cpp(113): message :  see declaration of 'fout'
+C:\Users\adams\source\repos\OOP345-EXAM\ExamReview\Source.cpp(117,7): error C3927:  '->': trailing return type is not allowed after a non-function declarator
+C:\Users\adams\source\repos\OOP345-EXAM\ExamReview\Source.cpp(117,7): error C3484:  syntax error: expected '->' before the return type
+C:\Users\adams\source\repos\OOP345-EXAM\ExamReview\Source.cpp(117,17): error C3613:  missing return type after '->' ('int' assumed)
+C:\Users\adams\source\repos\OOP345-EXAM\ExamReview\Source.cpp(117,17): error C4430:  missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\adams\source\repos\OOP345-EXAM\ExamReview\Source.cpp(117,1): error C2371:  'Arrays': redefinition; different basic types
+C:\Users\adams\source\repos\OOP345-EXAM\ExamReview\Source.cpp(116): message :  see declaration of 'Arrays'
+C:\Users\adams\source\repos\OOP345-EXAM\ExamReview\Source.cpp(117,8): error C2146:  syntax error: missing ';' before identifier 'push_back'
