@@ -1,10 +1,50 @@
 ﻿  Source.cpp
-C:\Users\adams\source\repos\OOP345-EXAM\ExamReview\Source.cpp(114,15): error C2374:  'fout': redefinition; multiple initialization
-C:\Users\adams\source\repos\OOP345-EXAM\ExamReview\Source.cpp(113): message :  see declaration of 'fout'
-C:\Users\adams\source\repos\OOP345-EXAM\ExamReview\Source.cpp(117,7): error C3927:  '->': trailing return type is not allowed after a non-function declarator
-C:\Users\adams\source\repos\OOP345-EXAM\ExamReview\Source.cpp(117,7): error C3484:  syntax error: expected '->' before the return type
-C:\Users\adams\source\repos\OOP345-EXAM\ExamReview\Source.cpp(117,17): error C3613:  missing return type after '->' ('int' assumed)
-C:\Users\adams\source\repos\OOP345-EXAM\ExamReview\Source.cpp(117,17): error C4430:  missing type specifier - int assumed. Note: C++ does not support default-int
-C:\Users\adams\source\repos\OOP345-EXAM\ExamReview\Source.cpp(117,1): error C2371:  'Arrays': redefinition; different basic types
-C:\Users\adams\source\repos\OOP345-EXAM\ExamReview\Source.cpp(116): message :  see declaration of 'Arrays'
-C:\Users\adams\source\repos\OOP345-EXAM\ExamReview\Source.cpp(117,8): error C2146:  syntax error: missing ';' before identifier 'push_back'
+C:\Users\adams\source\repos\GitHub\OOP345-EXAM\ExamReview\Source.cpp(202,17): warning C4244:  'initializing': conversion from 'std::streamoff' to 'int', possible loss of data
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905\include\algorithm(223,19): warning C4244:  'argument': conversion from 'double' to 'int', possible loss of data
+C:\Users\adams\source\repos\GitHub\OOP345-EXAM\ExamReview\Source.cpp(156): message :  see reference to function template instantiation 'int std::count_if<std::_Deque_iterator<std::_Deque_val<std::_Deque_simple_types<_Ty>>>,main::<lambda_27993956323cf0dc28811492b1edeaee>>(_InIt,_InIt,_Pr)' being compiled
+C:\Users\adams\source\repos\GitHub\OOP345-EXAM\ExamReview\Source.cpp(156): message :         with
+C:\Users\adams\source\repos\GitHub\OOP345-EXAM\ExamReview\Source.cpp(156): message :         [
+C:\Users\adams\source\repos\GitHub\OOP345-EXAM\ExamReview\Source.cpp(156): message :             _Ty=double,
+C:\Users\adams\source\repos\GitHub\OOP345-EXAM\ExamReview\Source.cpp(156): message :             _InIt=std::_Deque_iterator<std::_Deque_val<std::_Deque_simple_types<double>>>,
+C:\Users\adams\source\repos\GitHub\OOP345-EXAM\ExamReview\Source.cpp(156): message :             _Pr=main::<lambda_27993956323cf0dc28811492b1edeaee>
+C:\Users\adams\source\repos\GitHub\OOP345-EXAM\ExamReview\Source.cpp(156): message :         ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905\include\chrono(591): message :  see reference to class template instantiation 'std::chrono::duration<double,std::ratio<1,1>>' being compiled
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905\include\chrono(169): message :  see reference to class template instantiation 'std::chrono::duration<__int64,std::nano>' being compiled
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905\include\chrono(570): message :  see reference to class template instantiation 'std::chrono::time_point<std::chrono::steady_clock,std::chrono::steady_clock::duration>' being compiled
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905\include\algorithm(475,19): warning C4244:  'argument': conversion from 'double' to 'int', possible loss of data
+C:\Users\adams\source\repos\GitHub\OOP345-EXAM\ExamReview\Source.cpp(169): message :  see reference to function template instantiation '_OutIt std::copy_if<std::_Deque_iterator<std::_Deque_val<std::_Deque_simple_types<_Ty>>>,std::_Deque_iterator<std::_Deque_val<std::_Deque_simple_types<_Ty>>>,main::<lambda_583118f086bdbb6db4ed40d73b5cff3d>>(_InIt,_InIt,_OutIt,_Pr)' being compiled
+C:\Users\adams\source\repos\GitHub\OOP345-EXAM\ExamReview\Source.cpp(169): message :         with
+C:\Users\adams\source\repos\GitHub\OOP345-EXAM\ExamReview\Source.cpp(169): message :         [
+C:\Users\adams\source\repos\GitHub\OOP345-EXAM\ExamReview\Source.cpp(169): message :             _OutIt=std::_Deque_iterator<std::_Deque_val<std::_Deque_simple_types<double>>>,
+C:\Users\adams\source\repos\GitHub\OOP345-EXAM\ExamReview\Source.cpp(169): message :             _Ty=double,
+C:\Users\adams\source\repos\GitHub\OOP345-EXAM\ExamReview\Source.cpp(169): message :             _InIt=std::_Deque_iterator<std::_Deque_val<std::_Deque_simple_types<double>>>,
+C:\Users\adams\source\repos\GitHub\OOP345-EXAM\ExamReview\Source.cpp(169): message :             _Pr=main::<lambda_583118f086bdbb6db4ed40d73b5cff3d>
+C:\Users\adams\source\repos\GitHub\OOP345-EXAM\ExamReview\Source.cpp(169): message :         ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905\include\algorithm(1319,25): warning C4244:  'argument': conversion from 'double' to 'int', possible loss of data
+C:\Users\adams\source\repos\GitHub\OOP345-EXAM\ExamReview\Source.cpp(172): message :  see reference to function template instantiation '_OutIt std::transform<std::_Deque_iterator<std::_Deque_val<std::_Deque_simple_types<_Ty>>>,std::_Deque_iterator<std::_Deque_val<std::_Deque_simple_types<_Ty>>>,main::<lambda_a816950fa3c2a71ab012a29ef03baeee>>(const _InIt,const _InIt,_OutIt,_Fn)' being compiled
+C:\Users\adams\source\repos\GitHub\OOP345-EXAM\ExamReview\Source.cpp(172): message :         with
+C:\Users\adams\source\repos\GitHub\OOP345-EXAM\ExamReview\Source.cpp(172): message :         [
+C:\Users\adams\source\repos\GitHub\OOP345-EXAM\ExamReview\Source.cpp(172): message :             _OutIt=std::_Deque_iterator<std::_Deque_val<std::_Deque_simple_types<double>>>,
+C:\Users\adams\source\repos\GitHub\OOP345-EXAM\ExamReview\Source.cpp(172): message :             _Ty=double,
+C:\Users\adams\source\repos\GitHub\OOP345-EXAM\ExamReview\Source.cpp(172): message :             _InIt=std::_Deque_iterator<std::_Deque_val<std::_Deque_simple_types<double>>>,
+C:\Users\adams\source\repos\GitHub\OOP345-EXAM\ExamReview\Source.cpp(172): message :             _Fn=main::<lambda_a816950fa3c2a71ab012a29ef03baeee>
+C:\Users\adams\source\repos\GitHub\OOP345-EXAM\ExamReview\Source.cpp(172): message :         ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905\include\numeric(24,26): warning C4244:  '=': conversion from 'double' to '_Ty', possible loss of data
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905\include\numeric(24,26): warning C4244:         with
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905\include\numeric(24,26): warning C4244:         [
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905\include\numeric(24,26): warning C4244:             _Ty=int
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905\include\numeric(24,26): warning C4244:         ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905\include\numeric(33): message :  see reference to function template instantiation '_Ty std::accumulate<_InIt,_Ty,std::plus<void>>(const _InIt,const _InIt,_Ty,_Fn)' being compiled
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905\include\numeric(33): message :         with
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905\include\numeric(33): message :         [
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905\include\numeric(33): message :             _Ty=int,
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905\include\numeric(33): message :             _InIt=std::_Deque_iterator<std::_Deque_val<std::_Deque_simple_types<double>>>,
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905\include\numeric(33): message :             _Fn=std::plus<void>
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905\include\numeric(33): message :         ]
+C:\Users\adams\source\repos\GitHub\OOP345-EXAM\ExamReview\Source.cpp(180): message :  see reference to function template instantiation '_Ty std::accumulate<std::_Deque_iterator<std::_Deque_val<std::_Deque_simple_types<double>>>,int>(const _InIt,const _InIt,_Ty)' being compiled
+C:\Users\adams\source\repos\GitHub\OOP345-EXAM\ExamReview\Source.cpp(180): message :         with
+C:\Users\adams\source\repos\GitHub\OOP345-EXAM\ExamReview\Source.cpp(180): message :         [
+C:\Users\adams\source\repos\GitHub\OOP345-EXAM\ExamReview\Source.cpp(180): message :             _Ty=int,
+C:\Users\adams\source\repos\GitHub\OOP345-EXAM\ExamReview\Source.cpp(180): message :             _InIt=std::_Deque_iterator<std::_Deque_val<std::_Deque_simple_types<double>>>
+C:\Users\adams\source\repos\GitHub\OOP345-EXAM\ExamReview\Source.cpp(180): message :         ]
+  ExamReview.vcxproj -> C:\Users\adams\source\repos\GitHub\OOP345-EXAM\ExamReview\Debug\ExamReview.exe

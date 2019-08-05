@@ -21,7 +21,7 @@ public:
 	T foo;
 	Array() : n(0), foo(0) {}
 	// FUNCTOR
-	void operator()(){}
+	void operator()() {}
 	// copy constructor
 	Array(const Array& src) { *this = src; }
 	// move-constructor
@@ -108,19 +108,7 @@ auto add(const T& t, const U& u) -> decltype(t + u)
 template<typename Func>
 int add(int i, Func func) { return func(i); }
 
-
-//START SECOND HALF SEMESTER
-std::ofstream fout("output.txt"); // text access
-std::ofstream fout("output.txt", std::ios::out | 
-	std::ios::binary | std::ios::trunc); //binary
-
-
 int main() {
-	//START SECOND HALF SEMESTER
-	std::deque<std::thread> Arrays;
-	Arrays.push_back(std::thread(std::unique_ptr<Array<int>>
-		(new Array<int>())));
-	Arrays[0].join();
 	Colour wall = white;
 	Pet myPets[] = { Pet::cat };
 	Array <> a;
@@ -151,5 +139,82 @@ int main() {
 		// 19.35 122.123 33.22 19.25
 		std::cout << *i << "  ";
 	std::cout << std::endl;
+
+	// START SECOND HALF: FUNCTIONAL
+	std::function<int(int, int)> fu = add<int, int>;
+	std::cout << "fu(1,1) = " << fu(1, 1); // 2
+	std::cout << std::endl;
+	int i = 2; // fu2 is reference to i
+	std::reference_wrapper<int> fu2 = i;
+	auto p = std::bind(add<int, int>, 1, 1);
+	std::cout << p() << std::endl; // 2
+
+	// ALGORITHM
+	int n = std::count(d.begin(),d.end(), 19.35);
+	std::cout << n << std::endl; // 1
+	n = std::count_if(d.begin(), d.end(), 
+		[](int i) {return !(i & 1); });
+	std::cout << n << std::endl; // 1
+	std::deque<double> e(4);
+	// copy d's values into e
+	std::copy(d.begin(), d.end(), e.begin());
+	// range based for - STL container!!!
+	for (auto i : e)
+		// 19.35 122.123 33.22 19.25
+		std::cout << i << " ";
+	std::cout << std::endl;
+	std::deque<double> ef(1);
+	// copy d's even number into ef
+	std::copy_if(d.begin(), d.end(), ef.begin(),
+		[](int i) {return !(i % 2); });
+	std::deque<double> g(1);
+	std::transform(ef.begin(), ef.end(), g.begin(),
+		[](int i) {return --i; }); //g[0] = 121
+	std::sort(d.begin(), d.end());
+	for (auto i : d)
+		// 19.25 19.35 33.22 122.123
+		std::cout << i << " ";
+	std::cout << std::endl;
+
+	//NUMERIC
+	double ac = std::accumulate(d.begin(), d.end(), 0);
+	//accumulate the products of each pair in the range
+	ac = std::inner_product(g.begin(), g.end(), 
+		ef.begin(), (double)0);
+	//go through container and add next element to previous
+	//sum - insert into e
+	e = std::deque<double>(4);
+	d = std::deque<double>(4, 1);
+	std::partial_sum(d.begin(), d.end(), e.begin());
+	for (auto i : e)
+		// 1 2 3 4
+		std::cout << i << " ";
+	std::cout << std::endl;
+
+	// std::ios::trunc default
+	std::ofstream fout("text.txt"); // text access
+	// std::ios::app default
+	std::fstream f("output.txt", std::ios::out | std::ios::in |
+		std::ios::binary); // binary
+	f.seekp(0, std::ios::beg);// start of the file
+	f.seekp(5, std::ios::cur);// 5 bytes beyond current
+	std::streampos pos = f.tellp();// current position
+	f.seekp(0, std::ios::end);// end of the file
+	int streamsize = f.tellp();
+	f.seekp(0);
+	const char* s = new char[streamsize];
+	f.read(const_cast<char*>(s), streamsize);
+	f.write(s, streamsize);
+	f.seekp(0);
+	std::unique_ptr<Array<>> up(new Array<>());
+	std::cout << up->foo;// 0
+	std::thread t1(fu, 1, 1);
+	t1.join();
+	std::deque<std::thread> threads;
+	threads.push_back(std::thread(fu, 1, 1));
+	threads[0].get_id();
+	std::this_thread::get_id();
+	threads[0].join();
+	return 0;
 }
 
