@@ -1,5 +1,5 @@
 ﻿  Source.cpp
-C:\Users\adams\source\repos\GitHub\OOP345-EXAM\ExamReview\Source.cpp(202,17): warning C4244:  'initializing': conversion from 'std::streamoff' to 'int', possible loss of data
+C:\Users\adams\source\repos\GitHub\OOP345-EXAM\ExamReview\Source.cpp(203,17): warning C4244:  'initializing': conversion from 'std::streamoff' to 'int', possible loss of data
 C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905\include\algorithm(223,19): warning C4244:  'argument': conversion from 'double' to 'int', possible loss of data
 C:\Users\adams\source\repos\GitHub\OOP345-EXAM\ExamReview\Source.cpp(156): message :  see reference to function template instantiation 'int std::count_if<std::_Deque_iterator<std::_Deque_val<std::_Deque_simple_types<_Ty>>>,main::<lambda_27993956323cf0dc28811492b1edeaee>>(_InIt,_InIt,_Pr)' being compiled
 C:\Users\adams\source\repos\GitHub\OOP345-EXAM\ExamReview\Source.cpp(156): message :         with
