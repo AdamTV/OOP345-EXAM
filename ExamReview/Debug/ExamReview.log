@@ -1,5 +1,5 @@
 ﻿  Source.cpp
-C:\Users\adams\source\repos\GitHub\OOP345-EXAM\ExamReview\Source.cpp(203,17): warning C4244:  'initializing': conversion from 'std::streamoff' to 'int', possible loss of data
+C:\Users\adams\source\repos\GitHub\OOP345-EXAM\ExamReview\Source.cpp(205,17): warning C4244:  'initializing': conversion from 'std::streamoff' to 'int', possible loss of data
 C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905\include\algorithm(223,19): warning C4244:  'argument': conversion from 'double' to 'int', possible loss of data
 C:\Users\adams\source\repos\GitHub\OOP345-EXAM\ExamReview\Source.cpp(156): message :  see reference to function template instantiation 'int std::count_if<std::_Deque_iterator<std::_Deque_val<std::_Deque_simple_types<_Ty>>>,main::<lambda_27993956323cf0dc28811492b1edeaee>>(_InIt,_InIt,_Pr)' being compiled
 C:\Users\adams\source\repos\GitHub\OOP345-EXAM\ExamReview\Source.cpp(156): message :         with
@@ -41,10 +41,10 @@ C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.2
 C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905\include\numeric(33): message :             _InIt=std::_Deque_iterator<std::_Deque_val<std::_Deque_simple_types<double>>>,
 C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905\include\numeric(33): message :             _Fn=std::plus<void>
 C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905\include\numeric(33): message :         ]
-C:\Users\adams\source\repos\GitHub\OOP345-EXAM\ExamReview\Source.cpp(180): message :  see reference to function template instantiation '_Ty std::accumulate<std::_Deque_iterator<std::_Deque_val<std::_Deque_simple_types<double>>>,int>(const _InIt,const _InIt,_Ty)' being compiled
-C:\Users\adams\source\repos\GitHub\OOP345-EXAM\ExamReview\Source.cpp(180): message :         with
-C:\Users\adams\source\repos\GitHub\OOP345-EXAM\ExamReview\Source.cpp(180): message :         [
-C:\Users\adams\source\repos\GitHub\OOP345-EXAM\ExamReview\Source.cpp(180): message :             _Ty=int,
-C:\Users\adams\source\repos\GitHub\OOP345-EXAM\ExamReview\Source.cpp(180): message :             _InIt=std::_Deque_iterator<std::_Deque_val<std::_Deque_simple_types<double>>>
-C:\Users\adams\source\repos\GitHub\OOP345-EXAM\ExamReview\Source.cpp(180): message :         ]
+C:\Users\adams\source\repos\GitHub\OOP345-EXAM\ExamReview\Source.cpp(182): message :  see reference to function template instantiation '_Ty std::accumulate<std::_Deque_iterator<std::_Deque_val<std::_Deque_simple_types<double>>>,int>(const _InIt,const _InIt,_Ty)' being compiled
+C:\Users\adams\source\repos\GitHub\OOP345-EXAM\ExamReview\Source.cpp(182): message :         with
+C:\Users\adams\source\repos\GitHub\OOP345-EXAM\ExamReview\Source.cpp(182): message :         [
+C:\Users\adams\source\repos\GitHub\OOP345-EXAM\ExamReview\Source.cpp(182): message :             _Ty=int,
+C:\Users\adams\source\repos\GitHub\OOP345-EXAM\ExamReview\Source.cpp(182): message :             _InIt=std::_Deque_iterator<std::_Deque_val<std::_Deque_simple_types<double>>>
+C:\Users\adams\source\repos\GitHub\OOP345-EXAM\ExamReview\Source.cpp(182): message :         ]
   ExamReview.vcxproj -> C:\Users\adams\source\repos\GitHub\OOP345-EXAM\ExamReview\Debug\ExamReview.exe
